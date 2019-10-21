@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fondamento&display=swap" rel="stylesheet">
+    <script src="../../js/smooth-scroll.polyfills.min.js"></script>
+    <title>Operators</title>
+</head>
+
+<body>
+    <!-- Header Starts here -->
+    <div class="navbar" id="header">
+        <div class="header-logo">
+            <a href="/"><img src="../../images/PythonLogo.png" alt="logo">Python</a>
+        </div>
+        <div class="btn">
+            <div class="dropdown">
+                <button class="dropbtn">Datatypes</button>
+                <div class="dropdown-content">
+                    <a href="../datatypes/immutables.html">Immutable</a>
+                    <a href="../datatypes/mutables.html">Mutable</a>
+                </div>
+            </div>
+            <button class="dropbtn"><a href="../operators/operators.html">Operators</a></button>
+        </div>
+    </div>
+    <!-- Header Ends here -->
+    <!-- Main Starts Here -->
+    <main>
+        <div class="sidenav">
+            <a href="#arithmetic">Arithmetic Operators</a>
+            <a href="#comparational">Comparational Operators</a>
+            <a href="#assignment">Assignmental Operators</a>
+            <a href="#identity">Identity Operators</a>
+            <a href="#membership">Membership Operators</a>
+            <a href="#logical">Logical Operators</a>
+        </div>
+        <div class="sidemain">
+            <div class="content">
+                <h1><span id="arithmetic">Arithmetic Operators</span></h1>
+                <div class="wrapper">
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Definition</th>
+                            <th>Examples</th>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td> Add two operands or unary plus</td>
+                            <td>x + y</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtract right operand from the left or unary minus</td>
+                            <td>x - y</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Divide left operand by the right one (always results into float)</td>
+                            <td>x / y</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiply two operands</td>
+                            <td>x * y</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Modulus - remainder of the division of left operand by the right</td>
+                            <td>x % y</td>
+                        </tr>
+                        <tr>
+                            <td>//</td>
+                            <td>Floor division - division that results into whole number adjusted to the left in the
+                                number line</td>
+                            <td>x // y</td>
+                        </tr>
+                        <tr>
+                            <td>**</td>
+                            <td>Exponent - left operand raised to the power of right</td>
+                            <td>x ** y</td>
+                        </tr>
+                    </table>
+                    <p>These operators are used for mathematical equations</p>
+                    <p>Aside from the obvious ones, here are the examples below</p>
+                    <div class="examples">
+                        <span class="answer"># Output will be the remainder, thus 1 in this case</span>
+                        <p>a = 21 % 4</p>
+                        <p>print(a) </p>
+                    </div>
+                    <div class="examples">
+                        <span class="answer"># Output will not include decimals, thus 5 in this case</span>
+                        <p>a = 21 // 4</p>
+                        <p>print(a) </p>
+                    </div>
+                    <div class="examples">
+                        <span class="answer"># Output will be 2 to the power of 4, thus 16 in this case</span>
+                        <p>a = 2 ** 4</p>
+                        <p>print(a) </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h1><span id="comparational">Comparational Operators</span></h1>
+                <div class="wrapper">
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Definition</th>
+                            <th>Examples</th>
+                        </tr>
+                        <tr>
+                            <td>&gt;</td>
+                            <td> Greater than - True if left operand is greater than the right</td>
+                            <td>x > y</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;</td>
+                            <td>Less than - True if left operand is less than the right</td>
+                            <td>x &lt; y</td>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>Equal to - True if both operands are equal</td>
+                            <td>x / y</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td> Not equal to - True if operands are not equal</td>
+                            <td>x * y</td>
+                        </tr>
+                        <tr>
+                            <td>&gt;=</td>
+                            <td>Greater than or equal to - True if left operand is greater than or equal to the right
+                            </td>
+                            <td>x % y</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;=</td>
+                            <td>Less than or equal to - True if left operand is less than or equal to the right</td>
+                            <td>x &lt;= y</td>
+                        </tr>
+                    </table><br>
+                    <p>The return is a boolean of either True or False</p>
+                </div>
+            </div>
+            <div class="content">
+                <h1> <span id="assignment">Assignment Operators</span> </h1>
+                <div class="wrapper">
+                    <p>ter the element.</p>
+                    <div class="examples">
+                        <span class="answer"># Output will be('python', 'geeks')</span>
+                        <p>tup = ('python', 'geeks')</p>
+                        <p>print(tup)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h1 id="identity">Identity Operators</h1>
+                <div class="wrapper">
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Definition</th>
+                            <th>Examples</th>
+                        </tr>
+                        <tr>
+                            <td>is</td>
+                            <td>True if the operands are identical (refer to the same object)</td>
+                            <td>x > y</td>
+                        </tr>
+                        <tr>
+                            <td>is not</td>
+                            <td>True if the operands are not identical (do not refer to the same object)</td>
+                            <td>x &lt; y</td>
+                        </tr>
+                    </table><br>
+                    <p>is and is not are the identity operators in Python. They are used to check if two values (or
+                        variables) are located on the same part of the memory. Two variables that are equal does not
+                        imply that they are identical.</p>
+                    <div class="examples">
+                        <span class="answer"># Output will False</span>
+                        <p>x3 = [1,2,3]</p>
+                        <p>y3 = [1,2,3]</p>
+                        <p>print(x3 is y3)</p>
+                    </div>
+                    <p>x3 and y3 are list. They are equal but not identical. It is because interpreter locates them
+                        separately in memory although they are equal.</p>
+                </div>
+            </div>
+            <div class="content">
+                <h1> <span id="membership"> Membership Operators</span></h1>
+                <div class="wrapper">
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Definition</th>
+                            <th>Examples</th>
+                        </tr>
+                        <tr>
+                            <td>in</td>
+                            <td>True if value/variable is found in the sequence</td>
+                            <td>5 in x</td>
+                        </tr>
+                        <tr>
+                            <td>not in</td>
+                            <td>True if value/variable is not found in the sequence</td>
+                            <td>5 not in x</td>
+                        </tr>
+                    </table><br>
+                    <p>in and not in are the membership operators in Python. They are used to test whether a value or
+                        variable is found in a sequence (string, list, tuple, set and dictionary).
+                        In a dictionary we can only test for presence of key, not the value.</p>
+                    <div class="examples">
+                        <span class="answer"># Output1: True: Output2: False</span>
+                        <p>y = {1:'a',2:'b'}</p>
+                        <p>print(1 in y)</p>
+                        <p>print('a' in y)</p>
+                    </div>
+                    <p>This is case sensitive</p>
+                </div>
+            </div>
+            <div class="content">
+                <h1> <span id="logical"> Logical Operators</span></h1>
+                <div class="wrapper">
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Definition</th>
+                            <th>Examples</th>
+                        </tr>
+                        <tr>
+                            <td>and</td>
+                            <td>True if both the operands are true</td>
+                            <td>x and y</td>
+                        </tr>
+                        <tr>
+                            <td>or</td>
+                            <td>True if either of the operands is true</td>
+                            <td>x or y</td>
+                        </tr>
+                        <tr>
+                            <td>not</td>
+                            <td>True if operand is false (complements the operand)</td>
+                            <td>not x</td>
+                        </tr>
+                    </table><br>
+                    <div class="examples">
+                        <span class="answer"># Output will be {False, True, False}</span>
+                        <p>x = True</p>
+                        <p>y = False</p>
+                        <p>print(x and y)</p>
+                        <p>print(x or y)</p>
+                        <p>print(not x)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="../../js/scroll.js"></script>
+</body>
+
+</html>

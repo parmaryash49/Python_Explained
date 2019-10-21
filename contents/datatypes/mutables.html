@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fondamento&display=swap" rel="stylesheet">
+    <script src="../../js/smooth-scroll.polyfills.min.js"></script>
+    <title>Mutables</title>
+</head>
+
+<body>
+    <!-- Header Starts here -->
+    <div class="navbar" id="header">
+        <div class="header-logo">
+            <a href="/"><img src="../../images/PythonLogo.png" alt="logo">Python</a>
+        </div>
+        <div class="btn">
+            <div class="dropdown">
+                <button class="dropbtn">Datatypes</button>
+                <div class="dropdown-content">
+                    <a href="immutables.html">Immutable</a>
+                    <a href="mutables.html">Mutable</a>
+                </div>
+            </div>
+            <button class="dropbtn"><a href="../operators/operators.html">Operators</a></button>
+        </div>
+    </div>
+    <!-- Header Ends here -->
+    <!-- Main Starts Here -->
+    <main>
+        <div class="sidenav">
+            <a href="#list">List</a>
+            <a href="#dictionary">Dictionary</a>
+            <a href="#set">Sets</a>
+        </div>
+        <div class="sidemain">
+            <div class="content">
+                <h1><span id="list">List</span></h1>
+                <div class="wrapper">
+                    <h3> List </h3>
+                    <p>Lists are just like the arrays, declared in other languages. Lists need not be homogeneous always
+                        which makes it a most powerful tool in Python. A single list may contain DataTypes like
+                        Integers,
+                        Strings, as well as Objects. Lists are also very useful for implementing stacks and queues.</p>
+                    <div class="examples">
+                        <p>list = ['data1', 'data2', 3]</p>
+                    </div>
+                    <p> Lists are mutable, and hence, they can be altered even after their creation.</p>
+                    <div class="examples">
+                        <p>list.append(element) -- adds a single element to the end of the list.</p>
+                        <p>list.insert(index, element) -- inserts the element at the given index, shifting elements to
+                            the right.</p>
+                        <p>list.extend(list2) adds the elements in list2 to the end of the list. Using + or += on a list
+                            is similar to using extend().</p>
+                        <p>list.index(elem) -- searches for the given element from the start of the list and returns its
+                            index.</p>
+                        <p>list.remove(elem) -- searches for the first instance of the given element and removes it
+                            (throws ValueError if not present)</p>
+                        <p>list.sort() -- sorts the list in place (does not return it). (The sorted() function shown
+                            later is preferred.)</p>
+                        <p>list.reverse() -- reverses the list in place (does not return it)</p>
+                        <p>list.pop(index) -- removes and returns the element at the given index. Returns the rightmost
+                            element if index is omitted (roughly the opposite of append()).</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+                <h1><span id="dictionary">Dictionary</span></h1>
+                <p>A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are
+                    written with curly brackets, and they have keys and values.</p>
+                <div class="examples">
+                    <span class="answer"># Output will be {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}</span>
+                    <p>thisdict = {
+                        "brand": "Ford",
+                        "model": "Mustang",
+                        "year": 1964
+                        }
+                    </p>
+                    <p>print(thisdict)</p>
+                </div>
+                <p>You can access the items of a dictionary by referring to its key name, inside square brackets:</p>
+                <p>There is also a method called get() that will give you the same result:</p>
+                <div class="examples">
+                    <span class="answer"># Output will be Mustang</span>
+                    <p>x = thisdict["model"]</p>
+                    <p>x = thisdict.get("model")</p>
+                </div>
+            </div>
+            <div class="content">
+                <h1> <span id="set">Sets</span></h1>
+                <p>A set is a collection which is unordered and unindexed. In Python sets are written with curly
+                    brackets.</p>
+                <div class="examples">
+                    <span class="answer"># Output will be{"apple", "banana", "cherry"}</span>
+                    <p>thisset = {"apple", "banana", "cherry"}</p>
+                    <p>print(thisset)</p>
+                </div>
+                <p>Set will also remove all duplicates and will sort in ascending automatically for numbers</p>
+                <div class="examples">
+                    <span class="answer"># Output will be {1, 2, 3, 4, 5, 23}</span>
+                    <p>normal_set1 = set([4, 4, 3, 23, 5, 1, 1, 2, 3, 4])</p>
+                    <p>print(normal_set1)</p>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="../../js/scroll.js"></script>
+</body>
+
+</html>
